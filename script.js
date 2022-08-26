@@ -10,4 +10,8 @@ $(document).on('click', '#load_data', function() {
     }, random_num);
     console.log('Loading data...')
 });
-    
+$(document).on('click', '#refresh', function() {
+  random_num=Math.floor(Math.random() * 10000);
+  location.reload();
+  console.log('Refreshing the page...')
+});
